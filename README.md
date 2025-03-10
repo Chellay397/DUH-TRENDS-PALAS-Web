@@ -54,12 +54,11 @@ In today’s rapidly evolving business landscape, digital transformation is cruc
 2. Install dependencies:
 - For the frontend:
 ```bash
-  npm install
-  node server.js
+  cd public
+  open index.html or host the content
 ```
 - For the backend:
 ```bash
-  cd api
   npm install
 ```
 
@@ -76,11 +75,9 @@ DB_USER=your_user
 DB_PASSWORD=your_password
 DB_NAME=your_database
 ```
-4. Configure the API 
 
-
-5. Run the application:
-- Start the backend server:
+4. Run the application:
+- Start the frontend server:
 ```bash
 cd api
 node server.js
@@ -91,7 +88,7 @@ cd ..
 npm run dev
 ```
 
-6. Access the application:
+5. Access the application:
 - Open the Web Application
 ```bash
 http://localhost:3000
