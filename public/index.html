@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POS System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="d-flex">
+        <!-- Sidebar -->
+        <nav class="sidebar bg-dark vh-100 p-3">
+            <div class="text-center">
+                <img src="DUH LOGO.jpeg" alt="DUH Logo" class="logo">
+            </div>
+            <ul class="list-unstyled">
+                <li><a href="#" onclick="loadPage('home')" class="text-white">
+                    <img src="home.png" alt="Home Icon" class="icon"> HOME</a></li>
+                <li><a href="#" onclick="loadPage('order')" class="text-white">
+                    <img src="order.png" alt="Order Icon" class="icon"> ORDERS</a></li>
+                <li><a href="#" onclick="loadPage('products')" class="text-white">
+                    <img src="product.png" alt="Product Icon" class="icon"> PRODUCTS</a></li>
+                <li><a href="#" onclick="loadPage('contract')" class="text-white">
+                    <img src="contract.png" alt="Contract Icon" class="icon"> CONTRACT</a></li>
+                <li><a href="#" onclick="loadPage('storageType')" class="text-white">
+                    <img src="storage.png" alt="Storage Icon" class="icon"> STORAGE TYPE</a></li>
+                <li><a href="#" onclick="loadPage('employee')" class="text-white">
+                    <img src="employee.png" alt="Employee Icon" class="icon"> EMPLOYEE</a></li>
+            </ul>
+        </nav>
+       
+        <!-- Main Content -->
+        <div class="main-content p-4 flex-grow-1">
+            <div id="content">
+                <h2 class="mb-4">Point of Sale (POS) System</h2>
+                <form id="pos-form" style="display: none;">
+                    <div class="mb-3">
+                        <label for="product" class="form-label">Product Name</label>
+                        <input type="text" class="form-control" id="product" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="quantity" class="form-label">Quantity</label>
+                        <input type="number" class="form-control" id="quantity" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="price" class="form-label">Price</label>
+                        <input type="number" class="form-control" id="price" required>
+                    </div>
+                    <button type="button" class="btn btn-success" onclick="addOrderDetail()">Add Order Detail</button>
+                    <button type="button" class="btn btn-danger" onclick="deleteOrderDetail()">Delete Order Detail</button>
+                    <button type="button" class="btn btn-warning" onclick="editOrderDetail()">Edit Order Detail</button>
+                </form>
+               
+                <h3 class="mt-4">Order Summary</h3>
+                <table class="table table-bordered mt-3">
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
+                            <th>Subtotal</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="order-list">
+                        <!-- Orders will be added here -->
+                    </tbody>
+                </table>
+                <h4>Total: ₱<span id="total-price">0.00</span></h4>
+            </div>
+        </div>
+    </div>
+   
+    <script src="script.js"></script>
+    <script>
+        function showOrderForm() {
+            document.getElementById('pos-form').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
