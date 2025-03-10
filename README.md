@@ -26,13 +26,19 @@ In today’s rapidly evolving business landscape, digital transformation is cruc
 💾 MySQL (v8.0 or higher)
 ## Steps
 1. Clone the repository:
-- git clone https://github.com/Chellay397/DUH-TRENDS-PALAS-Web.git
+```bash
+  git clone https://github.com/Chellay397/DUH-TRENDS-PALAS-Web.git
+```
 
 2. Navigate to the project directory:
-- cd DUH-TRENDS-PALAS-Web
+```bash
+  gcd DUH-TRENDS-PALAS-Web
+```
 
 3. Install dependencies:
-- npm install
+```bash
+  npm install
+```
 
 
 ## Installation
@@ -77,15 +83,8 @@ DB_NAME=your_database
 ```
 
 4. Run the application:
-- Start the frontend server:
 ```bash
-cd api
-node server.js
-```
-- Start the backend server:
-```bash
-cd .. 
-npm run dev
+open index.html
 ```
 
 5. Access the application:
