@@ -92,6 +92,18 @@ open index.html
 ```bash
 http://localhost:3000
 ```
+
+## WIREFRAME
+![13](https://github.com/user-attachments/assets/cc3c8617-77c5-48e7-8d5e-d21abb112747)
+![14](https://github.com/user-attachments/assets/0828cfa5-142a-4449-8846-7a407fc6e282)
+![15](https://github.com/user-attachments/assets/1e355b89-774f-41f2-8dda-7f239406f72f)
+![16](https://github.com/user-attachments/assets/35f244a5-0f36-43d0-a549-8958513bd9a0)
+![17](https://github.com/user-attachments/assets/20dcc3f3-648a-4f41-9c99-19f3b4c6612f)
+![18](https://github.com/user-attachments/assets/2915aaa9-3172-4a37-8a9d-6e145a940342)
+
+
+
+
 ## License
 
 📜 This project is developed for academic purposes only as part of a school requirement. It is not intended for commercial use.
